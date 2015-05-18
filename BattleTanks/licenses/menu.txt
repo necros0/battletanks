@@ -1,0 +1,4 @@
+menu_ok.wav
+menu_cancel.wav
+
+Sampled from Logic 7 & Albino 3 vst synth

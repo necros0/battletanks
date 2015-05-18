@@ -1,0 +1,68 @@
+#pragma once
+
+enum MessageType {
+	MSG_P_MOVE_UP = 1,
+	MSG_M_MOVE_UP,
+
+	MSG_P_MOVE_LEFT,
+	MSG_M_MOVE_LEFT,
+
+	MSG_P_MOVE_DOWN,
+	MSG_M_MOVE_DOWN,
+
+	MSG_P_MOVE_RIGHT,
+	MSG_M_MOVE_RIGHT,
+
+	MSG_P_MOUSE1,
+	MSG_M_MOUSE1,
+
+	//MENU MESSAGES
+	MSG_MENU_ESC,
+	MSG_MENU_RESUME,
+	MSG_MENU_AUDIO,
+	MSG_MENU_CONTROLS,
+	MSG_MENU_SAVE,
+	MSG_MENU_LOAD,
+	MSG_MENU_QUIT,
+	MSG_MENU_START,
+	MSG_MENU_NEWOPT,
+	MSG_MENU_BACK,
+	MSG_MENU_WIN,
+	MSG_MENU_LOSS,
+
+	//Collision
+	MSG_COLLISION,
+
+	//Damage
+	MSG_DAMAGE,
+
+	//Game control
+	MSG_GAME_START,
+	MSG_GAME_QUIT,
+
+	//Tanks
+	MSG_AI_SPAWNED,
+	MSG_AI_DEATH,
+	MSG_PLAYER_DEATH,
+	MSG_PLAYER_UPDATE_ATTACK_TARGET, // = 30,
+	MSG_PLAYER_ATTACK_ON,
+	MSG_PLAYER_ATTACK_OFF,
+
+	//Powerups
+	MSG_POWERUP_PICKUP,			 //actually picked up, tells the powerup to remove itself
+	MSG_POWERUP_KINETIC_ACQUIRE, //message to send to tank to tell it what it got
+	MSG_POWERUP_KINETIC_USE,
+	MSG_POWERUP_KINETIC_RESPAWN, //tell game to respawn the powerup
+	MSG_POWERUP_KINETIC_EXPIRE, //remove item from inventory
+
+	MSG_POWERUP_SHIELD_ACQUIRE,  //same thing
+	MSG_POWERUP_SHIELD_RESPAWN,
+	MSG_POWERUP_SHIELD_EXPIRE,
+
+	//Inventory management input messages
+	MSG_MWHEEL_UP,
+	MSG_MWHEEL_DOWN,
+	MSG_INVENTORY_USE,
+	
+	MSG_DEBUFF_STUN
+};

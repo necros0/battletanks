@@ -1,0 +1,4 @@
+Used without permission:
+	kine_flyby: Microsoft Fury^3
+	kine_target: Descent: Freespace
+	pickup: Quake 3: Arena
